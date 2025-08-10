@@ -1,13 +1,12 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { useNavigate, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { getTrips } from '../services/tripService';
-import './Paquetes.css';
+import './TripsPage.css';
 import Trip from '../components/trip';
 
 const CATEGORIES = ['Nacional Bus', 'Nacional Aereo', 'Internacional', 'Grupal'];
 
-const Paquetes = () => {
-  const navigate = useNavigate();
+const TripsPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [trips, setTrips] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -62,15 +61,9 @@ const Paquetes = () => {
   }
 
   return (
-    <div className="page-content paquetes-container">
-      <div className="paquetes-header">
+    <div className="page-content trips-container">
+      <div className="trips-header">
         <h1>Nuestros Paquetes</h1>
-        {/* <button 
-          className="add-package-btn"
-          onClick={() => navigate('/paquetes/agregar')}
-        >
-          + Nuevo Paquete
-        </button> */}
       </div>
       
       {/* Category Filter */}
@@ -102,7 +95,7 @@ const Paquetes = () => {
             </div>
           ) : (
             filteredTrips.map((trip) => (
-            <Trip key={trip.id} trip={trip} />
+              <Trip key={trip.id} {...trip} />
             ))
           )}
         </div>
@@ -111,4 +104,4 @@ const Paquetes = () => {
   );
 };
 
-export default Paquetes;
+export default TripsPage;

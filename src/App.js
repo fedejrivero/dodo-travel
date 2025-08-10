@@ -4,9 +4,8 @@ import Layout from './components/layout';
 import Home from './pages/Home';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
-import Paquetes from './pages/Paquetes';
+import TripsPage from './pages/TripsPage';
 import Requisitos from './pages/Requisitos';
-import AgregarPaquete from './pages/AgregarPaquete';
 import Banner from './components/banner';
 
 function App() {
@@ -38,7 +37,7 @@ function App() {
         <Route path="/paquetes" element={
           <Layout>
             <main className="main-content">
-              <Paquetes />
+              <TripsPage />
             </main>
           </Layout>
         } />
@@ -46,13 +45,6 @@ function App() {
           <Layout>
             <main className="main-content">
               <Requisitos />
-            </main>
-          </Layout>
-        } />
-        <Route path="/paquetes/agregar" element={
-          <Layout>
-            <main className="main-content">
-              <AgregarPaquete />
             </main>
           </Layout>
         } />

@@ -1,16 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.f855e6bc.css",
-    "main.js": "/static/js/main.2394d78b.js",
+    "main.css": "/static/css/main.2efed1ff.css",
+    "main.js": "/static/js/main.5ae11b0e.js",
     "static/js/453.e1150d4e.chunk.js": "/static/js/453.e1150d4e.chunk.js",
-    "static/media/logo.png": "/static/media/logo.fdb74b86787011f8322f.png",
+    "static/media/bannerImage.jpeg": "/static/media/bannerImage.d6136de27c12a0e95144.jpeg",
+    "static/media/plumas.png": "/static/media/plumas.03bc745552b33362b937.png",
+    "static/media/destinosInternacionales.jpeg": "/static/media/destinosInternacionales.8efccd86ec3734e0fd95.jpeg",
+    "static/media/salidasGrupales.jpeg": "/static/media/salidasGrupales.d278495cc2d8f4b802b4.jpeg",
+    "static/media/disney.jpeg": "/static/media/disney.f9e6d56b60d6b66c9e65.jpeg",
+    "static/media/dodo.png": "/static/media/dodo.6974300c4a3997e2edfc.png",
+    "static/media/destinosNacionalesAereo.jpeg": "/static/media/destinosNacionalesAereo.e146ea21d105b5490a03.jpeg",
+    "static/media/circuitos.jpeg": "/static/media/circuitos.bed41bb1d0c44057f188.jpeg",
+    "static/media/emptyImage.jpg": "/static/media/emptyImage.475cde71b4511ee82372.jpg",
+    "static/media/logoWP.jpg": "/static/media/logoWP.a950b2e20e2ca608b509.jpg",
+    "static/media/destinosNacionalesBus.jpeg": "/static/media/destinosNacionalesBus.c96143f620dce78d63dd.jpeg",
+    "static/media/cruceros.jpeg": "/static/media/cruceros.5c2c882d83771488c0ca.jpeg",
+    "static/media/asistencia.jpeg": "/static/media/asistencia.907234829fde72db39d7.jpeg",
+    "static/media/deportes.jpeg": "/static/media/deportes.ca26ffd0bf31a3a25e31.jpeg",
+    "static/media/bannerLogo.png": "/static/media/bannerLogo.95126bfb2fdd4b178c1e.png",
+    "static/media/dodoTravelWhite.png": "/static/media/dodoTravelWhite.95126bfb2fdd4b178c1e.png",
+    "static/media/logo.png": "/static/media/logo.61b4f4eeb66feba3c1b7.png",
+    "static/media/dodoTravel.png": "/static/media/dodoTravel.d4867a8b447ba6632c35.png",
     "index.html": "/index.html",
-    "main.f855e6bc.css.map": "/static/css/main.f855e6bc.css.map",
-    "main.2394d78b.js.map": "/static/js/main.2394d78b.js.map",
+    "main.2efed1ff.css.map": "/static/css/main.2efed1ff.css.map",
+    "main.5ae11b0e.js.map": "/static/js/main.5ae11b0e.js.map",
     "453.e1150d4e.chunk.js.map": "/static/js/453.e1150d4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.2394d78b.js"
+    "static/css/main.2efed1ff.css",
+    "static/js/main.5ae11b0e.js"
   ]
 }
