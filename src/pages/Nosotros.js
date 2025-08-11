@@ -33,7 +33,7 @@ const Nosotros = () => {
                         Y acá estamos para eso, te ayudamos a volar
                     </h2>
                     <h2>
-                        Bienvenide a Dodo Travel.
+                        Bienvenidos a Dodo Travel.
                     </h2>
                     <h2>
                         Tu viaje arranca acá.

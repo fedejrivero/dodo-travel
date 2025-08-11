@@ -6,6 +6,7 @@ import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
 import TripsPage from './pages/TripsPage';
 import Requisitos from './pages/Requisitos';
+import NotFoundPage from './pages/NotFoundPage';
 import Banner from './components/banner';
 
 function App() {
@@ -45,6 +46,13 @@ function App() {
           <Layout>
             <main className="main-content">
               <Requisitos />
+            </main>
+          </Layout>
+        } />
+        <Route path="*" element={
+          <Layout>
+            <main className="main-content">
+              <NotFoundPage />
             </main>
           </Layout>
         } />

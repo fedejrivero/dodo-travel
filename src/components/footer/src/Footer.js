@@ -6,9 +6,12 @@ const Footer = () => {
 
   return (
     <footer className="footer">
-      <div className="footer-content">
-        <img src={dodoTravel} alt="dodoTravel" className="dodo-travel"/>
-      </div>
+      {!isMobile && (
+        <div className="footer-content">
+          <img src={dodoTravel} alt="dodoTravel" className="dodo-travel"/>
+        </div>
+        )
+      }
 
       <div className="footer-content">
         <div className="footer-text">
