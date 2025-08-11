@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/logo.png';
 import plumas from '../../../images/plumas.png';
-import dodoTravel from '../../../images/dodoTravel.png';
+import dodoTravelBlue from '../../../images/dodoTravelBlue.png';
 import useIsMobile from '../../../hooks/useIsMobile';
 
 const NavBar = () => {
@@ -61,7 +61,7 @@ const NavBar = () => {
       <div className="navbar-header">
         <Link to="/" className="logo-container" onClick={closeMenu}>
           <img src={logo} alt="Logo" className="logo" />
-          <img src={dodoTravel} alt="Dodo Travel" className="dodo-travel" />
+          <img src={dodoTravelBlue} alt="Dodo Travel" className="dodo-travel" />
         </Link>
         
         {isMobile ? (

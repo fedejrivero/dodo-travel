@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2efed1ff.css",
-    "main.js": "/static/js/main.5ae11b0e.js",
+    "main.css": "/static/css/main.89931f67.css",
+    "main.js": "/static/js/main.e85f9cd8.js",
     "static/js/453.e1150d4e.chunk.js": "/static/js/453.e1150d4e.chunk.js",
     "static/media/bannerImage.jpeg": "/static/media/bannerImage.d6136de27c12a0e95144.jpeg",
     "static/media/plumas.png": "/static/media/plumas.03bc745552b33362b937.png",
@@ -16,18 +16,18 @@
     "static/media/destinosNacionalesBus.jpeg": "/static/media/destinosNacionalesBus.c96143f620dce78d63dd.jpeg",
     "static/media/cruceros.jpeg": "/static/media/cruceros.5c2c882d83771488c0ca.jpeg",
     "static/media/asistencia.jpeg": "/static/media/asistencia.907234829fde72db39d7.jpeg",
+    "static/media/logo.png": "/static/media/logo.fdb74b86787011f8322f.png",
     "static/media/deportes.jpeg": "/static/media/deportes.ca26ffd0bf31a3a25e31.jpeg",
     "static/media/bannerLogo.png": "/static/media/bannerLogo.95126bfb2fdd4b178c1e.png",
     "static/media/dodoTravelWhite.png": "/static/media/dodoTravelWhite.95126bfb2fdd4b178c1e.png",
-    "static/media/logo.png": "/static/media/logo.61b4f4eeb66feba3c1b7.png",
-    "static/media/dodoTravel.png": "/static/media/dodoTravel.d4867a8b447ba6632c35.png",
+    "static/media/dodoTravelBlue.png": "/static/media/dodoTravelBlue.fd488ee4e4723caaef66.png",
     "index.html": "/index.html",
-    "main.2efed1ff.css.map": "/static/css/main.2efed1ff.css.map",
-    "main.5ae11b0e.js.map": "/static/js/main.5ae11b0e.js.map",
+    "main.89931f67.css.map": "/static/css/main.89931f67.css.map",
+    "main.e85f9cd8.js.map": "/static/js/main.e85f9cd8.js.map",
     "453.e1150d4e.chunk.js.map": "/static/js/453.e1150d4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2efed1ff.css",
-    "static/js/main.5ae11b0e.js"
+    "static/css/main.89931f67.css",
+    "static/js/main.e85f9cd8.js"
   ]
 }

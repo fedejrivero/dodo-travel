@@ -20,7 +20,6 @@ body {
 /* Layout */
 .app-container {
   background-image: url(images/plumas.png);
-  background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;

@@ -66,17 +66,22 @@
     align-items: center;
     gap: 2rem;
     padding: 0.5rem 0;
+    height: 120px;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 200px;
     transition: all 0.3s ease;
 }
 
 .dodo-travel {
-    width: 175px;
-    height: 75px;
+    position: absolute;
+    left: 150px;
+    width: 250px;
+    height: 250px;
     margin-left: 0.5rem;
     transition: all 0.3s ease;
 }
