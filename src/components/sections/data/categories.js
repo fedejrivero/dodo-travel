@@ -1,28 +1,28 @@
 
-import destinosNacionalesBus from './destinosNacionalesBus.jpeg';
-import destinosNacionalesAereo from './destinosNacionalesAereo.jpeg';
-import destinosInternacionales from './destinosInternacionales.jpeg';
-import salidasGrupales from './salidasGrupales.jpeg';
+import nacionalesBus from './nacionalesBus.jpeg';
+import nacionalesAereo from './nacionalesAereo.jpeg';
+import internacionales from './internacionales.jpeg';
+import grupales from './grupales.jpeg';
 
 const categories = [
     {
         "title": "DESTINOS NACIONALES \nBUS",
-        "image": destinosNacionalesBus,
+        "image": nacionalesBus,
         "category": "Nacional Bus"
     },
     {
         "title": "DESTINOS NACIONALES \nAEREO",
-        "image": destinosNacionalesAereo,
+        "image": nacionalesAereo,
         "category": "Nacional Aereo"
     },
     {
         "title": "SALIDAS INTERNACIONALES",
-        "image": destinosInternacionales,
+        "image": internacionales,
         "category": "Internacional"
     },
     {
         "title": "SALIDAS GRUPALES",
-        "image": salidasGrupales,
+        "image": grupales,
         "category": "Grupal"
     }
 ];

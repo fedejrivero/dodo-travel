@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.8bd19b6e.css",
-    "main.js": "/static/js/main.66d856d0.js",
+    "main.css": "/static/css/main.37dbf4df.css",
+    "main.js": "/static/js/main.e9527b08.js",
     "static/js/453.e1150d4e.chunk.js": "/static/js/453.e1150d4e.chunk.js",
     "static/media/bannerImage.jpeg": "/static/media/bannerImage.d6136de27c12a0e95144.jpeg",
     "static/media/plumas.png": "/static/media/plumas.03bc745552b33362b937.png",
-    "static/media/destinosInternacionales.jpeg": "/static/media/destinosInternacionales.8efccd86ec3734e0fd95.jpeg",
-    "static/media/salidasGrupales.jpeg": "/static/media/salidasGrupales.d278495cc2d8f4b802b4.jpeg",
+    "static/media/internacionales.jpeg": "/static/media/internacionales.8efccd86ec3734e0fd95.jpeg",
+    "static/media/grupales.jpeg": "/static/media/grupales.d278495cc2d8f4b802b4.jpeg",
     "static/media/disney.jpeg": "/static/media/disney.f9e6d56b60d6b66c9e65.jpeg",
     "static/media/dodo.png": "/static/media/dodo.6974300c4a3997e2edfc.png",
-    "static/media/destinosNacionalesAereo.jpeg": "/static/media/destinosNacionalesAereo.e146ea21d105b5490a03.jpeg",
+    "static/media/nacionalesAereo.jpeg": "/static/media/nacionalesAereo.e146ea21d105b5490a03.jpeg",
     "static/media/circuitos.jpeg": "/static/media/circuitos.bed41bb1d0c44057f188.jpeg",
     "static/media/emptyImage.jpg": "/static/media/emptyImage.475cde71b4511ee82372.jpg",
     "static/media/logoWP.jpg": "/static/media/logoWP.a950b2e20e2ca608b509.jpg",
-    "static/media/destinosNacionalesBus.jpeg": "/static/media/destinosNacionalesBus.c96143f620dce78d63dd.jpeg",
+    "static/media/nacionalesBus.jpeg": "/static/media/nacionalesBus.c96143f620dce78d63dd.jpeg",
     "static/media/cruceros.jpeg": "/static/media/cruceros.5c2c882d83771488c0ca.jpeg",
     "static/media/asistencia.jpeg": "/static/media/asistencia.907234829fde72db39d7.jpeg",
     "static/media/logo.png": "/static/media/logo.fdb74b86787011f8322f.png",
@@ -22,12 +22,12 @@
     "static/media/dodoTravelWhite.png": "/static/media/dodoTravelWhite.95126bfb2fdd4b178c1e.png",
     "static/media/dodoTravelBlue.png": "/static/media/dodoTravelBlue.fd488ee4e4723caaef66.png",
     "index.html": "/index.html",
-    "main.8bd19b6e.css.map": "/static/css/main.8bd19b6e.css.map",
-    "main.66d856d0.js.map": "/static/js/main.66d856d0.js.map",
+    "main.37dbf4df.css.map": "/static/css/main.37dbf4df.css.map",
+    "main.e9527b08.js.map": "/static/js/main.e9527b08.js.map",
     "453.e1150d4e.chunk.js.map": "/static/js/453.e1150d4e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bd19b6e.css",
-    "static/js/main.66d856d0.js"
+    "static/css/main.37dbf4df.css",
+    "static/js/main.e9527b08.js"
   ]
 }
