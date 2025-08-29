@@ -2,7 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { getTrips } from '../services/tripService';
 import './TripsPage.css';
-import Trip from '../components/trip';
+import TripCard from '../components/tripCard';
 
 const CATEGORIES = ['Nacional Bus', 'Nacional Aereo', 'Internacional', 'Grupal'];
 
@@ -95,7 +95,7 @@ const TripsPage = () => {
             </div>
           ) : (
             filteredTrips.map((trip) => (
-              <Trip key={trip.id} {...trip} />
+              <TripCard key={trip.id} {...trip} />
             ))
           )}
         </div>

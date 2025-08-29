@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Nosotros from './pages/Nosotros';
 import Contacto from './pages/Contacto';
 import TripsPage from './pages/TripsPage';
+import TripDetailPage from './pages/TripDetailPage';
 import Requisitos from './pages/Requisitos';
 import NotFoundPage from './pages/NotFoundPage';
 import Banner from './components/banner';
@@ -46,6 +47,13 @@ function App() {
           <Layout>
             <main className="main-content">
               <Requisitos />
+            </main>
+          </Layout>
+        } />
+        <Route path="/paquete/:id" element={
+          <Layout>
+            <main className="main-content">
+              <TripDetailPage />
             </main>
           </Layout>
         } />
