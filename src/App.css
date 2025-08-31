@@ -81,3 +81,4 @@ body {
 @import "./components/tripCard/index.scss"; 
 @import "./components/rates/index.scss"; 
 @import "./components/amenities/index.scss"; 
+@import "./components/check/index.scss"; 

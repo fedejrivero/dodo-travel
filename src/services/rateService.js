@@ -1,5 +1,5 @@
-const API_URL = 'http://localhost:5001/api';
-// const API_URL = 'https://srv942210.hstgr.cloud/api';
+// const API_URL = 'http://localhost:5001/api';
+const API_URL = 'https://srv942210.hstgr.cloud/api';
 
 /**
  * Fetches rates for a specific trip by its ID

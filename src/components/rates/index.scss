@@ -5,44 +5,172 @@
     justify-content: start;
     align-items: center;
     gap: 3rem;
+
+    .hotel {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hotel-name {
+        font-weight: bold;
+    }
+
+    .rates-list {
+        width: 100%;
+        overflow-x: scroll;
+        display: grid;
+        column-gap: 1rem;
+        border: 1px solid #043e53;
+        font-size: 1rem;
+        text-align: center;
+
+        .price-amount{
+            .currency{
+                font-size: 0.75rem;
+            }
+            .amount{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .rate {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-top: 1px solid #043e53;
+    }
+
+    .rate-date {
+        width: 15%;
+    }
+
+    .rate-nights {
+        width: 15%;
+        min-width: 4rem;
+    }
+
+    .rate-assist {
+        width: 15%;
+    }
+
+    .rate-excursions {
+        width: 15%;
+    }
+
+    thead {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+        tr {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        th {
+            width: 20%;
+            min-width: 6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            padding: 0.5rem;
+            border-right: 1px solid white;
+            background-color: #043e53;
+            color: white;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    tbody {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        tr {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        td {
+            width: 20%;
+            min-width: 6rem;
+            height: 3rem;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #043e53;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+        
+    }
 }
 
-.hotel {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 1rem;
-}
 
-.hotel-name {
-    font-weight: bold;
-}
+@media (max-width: 768px) {
+    .rates {
+        .hotel {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
 
-.rates-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
+        .rates-list {
+            width: 100%;
 
-.rates-headers {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 1rem;
-    font-weight: bold;
-}
+            tr {
+                width: 100%;
+                display: flex;
+                align-items: center;
 
-.rate {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid #043e53;
-    border-radius: 5px;
+                &:last-child {
+                    th, td {
+                        border-bottom: none;
+                    }
+                }
+            }
+
+            th {
+                width: 50%;
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                background-color: #043e53;
+                color: white;
+                border-bottom: 1px solid white;
+            }
+            
+            td {
+                width: 50%;
+                height: 2.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #043e53;
+                border-bottom: 1px solid #043e53;
+            }
+        }
+
+        .price-amount {
+            margin: auto;
+        }
+    }
 }

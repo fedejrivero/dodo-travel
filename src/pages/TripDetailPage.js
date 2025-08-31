@@ -7,6 +7,7 @@ import useIsMobile from '../hooks/useIsMobile';
 import { getRatesByTripId } from '../services/rateService';
 import Rates from '../components/rates';
 import Amenities from '../components/amenities';
+import RatesMobile from '../components/rates/src/RatesMobile';
 
 const TripDetailPage = () => {
   const { id } = useParams();
@@ -82,25 +83,25 @@ const TripDetailPage = () => {
               </h4>
             )}
           </div>
-          {!isMobile && (
-            <div className="trip-price">
-              <span>Desde</span>
-              <div className="price-amount">
-                <span className="currency">{trip.currency}</span>
-                <span className="amount">{trip.price}</span>
-              </div>
+          <div className="trip-price">
+            <span>Desde</span>
+            <div className="price-amount">
+              <span className="currency">{trip.currency}</span>
+              <span className="amount">{trip.price}</span>
             </div>
-          )}
+          </div>
         </div>
       </div>
 
       <div className="trip-detail-content">
 
         <div className="trip-detail-info">
-          <div className="trip-description">
-            <h3>Descripción</h3>
-            <p>{trip.description || 'No hay descripción disponible.'}</p>
-          </div>
+          {trip.description && (
+            <div className="trip-description">
+              <h3>Descripción</h3>
+              <p>{trip.description || 'No hay descripción disponible.'}</p>
+            </div>
+          )}
 
           <div className="trip-detail-amenities">
             <h3>Incluye</h3>
@@ -110,7 +111,7 @@ const TripDetailPage = () => {
           </div>
           <div className="trip-dates">
             <h3>Fechas y tarifas disponibles</h3>
-            {rates ? <Rates rates={rates} /> : <p>No hay fechas disponibles</p>}
+            {rates.length > 0 ? (isMobile ? <RatesMobile rates={rates} /> : <Rates rates={rates} />) : <p> No hay fechas disponibles </p>}
           </div>
         </div>
 

@@ -134,7 +134,7 @@
 
 .trip-price span {
   display: block;
-  color: #7f8c8d;
+  color: #F77805;
   margin-bottom: 0.5rem;
 }
 
@@ -255,6 +255,11 @@
 
 /* Responsive styles */
 @media (max-width: 768px) {
+
+  .trip-detail-header h1 {
+    margin-bottom: 0;
+  }
+
   .trip-detail-container {
     margin: 2rem auto;
     padding: 0 1rem;
@@ -262,6 +267,7 @@
 
   .trip-detail-content {
     padding: 0 1rem 2.5rem;
+    gap: 0;
   }
 
   .trip-detail-image {
@@ -270,5 +276,8 @@
 
   .trip-detail-header {
     flex-direction: column;
+  }
+  .trip-price {
+    padding: 0;
   }
 }
