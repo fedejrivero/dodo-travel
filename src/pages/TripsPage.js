@@ -85,11 +85,11 @@ const TripsPage = () => {
         ))}
       </div>
       
-      {trips.length === 0 ? (
+      {trips?.length === 0 ? (
         <p>No hay paquetes disponibles en este momento.</p>
       ) : (
         <div className="trips">
-          {filteredTrips.length === 0 ? (
+          {filteredTrips?.length === 0 ? (
             <div className="no-results">
               <p>No se encontraron paquetes en la categoría seleccionada.</p>
             </div>

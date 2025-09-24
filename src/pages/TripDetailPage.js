@@ -8,6 +8,7 @@ import { getRatesByTripId } from '../services/rateService';
 import Rates from '../components/rates';
 import Amenities from '../components/amenities';
 import RatesMobile from '../components/rates/src/RatesMobile';
+import { format, parseISO } from 'date-fns';
 
 const TripDetailPage = () => {
   const { id } = useParams();
@@ -17,6 +18,9 @@ const TripDetailPage = () => {
   const [error, setError] = useState(null);
   const [isConditionsExpanded, setIsConditionsExpanded] = useState(false);
   const isMobile = useIsMobile();
+
+  const datesWithoutQuotes = trip?.dates.slice(1, -1).split(',').map(date => date.slice(1, -1));
+  const formatDates = datesWithoutQuotes?.map((date) => format(parseISO(date), 'dd/MM/yyyy')); 
 
   const toggleConditions = () => {
     setIsConditionsExpanded(!isConditionsExpanded);
@@ -111,7 +115,12 @@ const TripDetailPage = () => {
           </div>
           <div className="trip-dates">
             <h3>Fechas y tarifas disponibles</h3>
-            {rates.length > 0 ? (isMobile ? <RatesMobile rates={rates} /> : <Rates rates={rates} />) : <p> No hay fechas disponibles </p>}
+            {rates?.length > 0 ? 
+              (isMobile ? <RatesMobile rates={rates} /> : <Rates rates={rates} />) :
+              (formatDates ? 
+                <div>{formatDates.join(' - ')}</div>
+
+              : <p> No hay fechas disponibles </p>)}
           </div>
         </div>
 
