@@ -171,57 +171,6 @@
   background-color: #2980b9;
 }
 
-.trip-detail-footer {
-  width: 100%;
-  
-  .conditions-toggle {
-    background: none;
-    border: none;
-    width: 100%;
-    text-align: left;
-    padding: 1rem 0;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    h3 {
-      margin: 0;
-      font-size: 1.1rem;
-      color: #043e53;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-    }
-    
-    &:focus-visible {
-      outline: 2px solid #043e53;
-      outline-offset: 2px;
-      border-radius: 4px;
-    }
-    
-    .toggle-icon {
-      display: inline-block;
-      transition: transform 0.3s ease;
-      margin-left: 1rem;
-      font-size: 0.8em;
-      
-      &.expanded {
-        transform: rotate(180deg);
-      }
-    }
-  }
-  
-  .trip-detail-conditions {
-    margin-top: 1rem;
-    transition: 0.3s ease-in-out;
-    font-size: 0.75rem;
-    text-align: justify;
-
-  }
-}
-
 .back-link {
   color: #043e53;
   text-decoration: none;
