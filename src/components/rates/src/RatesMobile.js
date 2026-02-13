@@ -1,4 +1,3 @@
-import { format } from 'date-fns';
 import Check from '../../check';
 
 const RatesMobile = ({rates}) => {
@@ -25,7 +24,7 @@ const RatesMobile = ({rates}) => {
            <table className="rates-list">
             <tr className="rate-date">
               <th>Fecha</th>
-              <td>{format(rate.date, 'dd/MM/yyyy')}</td>
+              <td>{rate.date}</td>
             </tr>
             <tr className="rate-nights">
               <th>Noches</th>

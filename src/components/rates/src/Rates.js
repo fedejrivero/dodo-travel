@@ -1,4 +1,3 @@
-import { format } from 'date-fns';
 import Check from '../../check';
 
 const Rates = ({rates}) => {
@@ -35,7 +34,7 @@ const Rates = ({rates}) => {
             <tbody>
               {rates.map((rate, index) => (
                 <tr key={index} className="rate">
-                  <td className="rate-date">{format(rate.date, 'dd/MM/yyyy')}</td>
+                  <td className="rate-date">{rate.date}</td>
                   <td className="rate-nights">{rate.nights}</td>
                   {showBus && <td className="rate-bus">{rate.bus}</td>}
                   <td className="rate-regime">{rate.regime}</td>
