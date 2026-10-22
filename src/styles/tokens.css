@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Dodo Travel — Design Tokens
+   Sistema de diseño moderno. Paleta teal evolucionada + neutros + acento.
+   ========================================================================== */
+
+:root {
+  /* --- Brand (teal evolucionado) --- */
+  --brand-900: #032e3e;
+  --brand-800: #043e53; /* teal original de marca */
+  --brand-700: #0a5670;
+  --brand-600: #10708f;
+  --brand-500: #1a8cb0;
+  --brand-400: #4fb0cf;
+  --brand-300: #8fd0e3;
+  --brand-100: #dcf0f6;
+  --brand-50: #eef8fb;
+
+  /* --- Acento (coral cálido para CTAs) --- */
+  --accent-600: #e8663d;
+  --accent-500: #ff7a4d;
+  --accent-400: #ff9670;
+
+  /* --- Neutros --- */
+  --ink-900: #0f2530;
+  --ink-700: #3a4a52;
+  --ink-500: #64777f;
+  --ink-300: #a7b4ba;
+  --surface: #ffffff;
+  --surface-muted: #f4f8fa;
+  --bg: #eef3f5;
+  --border: #e3ebee;
+
+  /* --- Tipografía --- */
+  --font-display: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+  /* --- Radios --- */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 999px;
+
+  /* --- Sombras --- */
+  --shadow-sm: 0 1px 3px rgba(4, 62, 83, 0.08);
+  --shadow-md: 0 8px 24px rgba(4, 62, 83, 0.12);
+  --shadow-lg: 0 18px 48px rgba(4, 62, 83, 0.18);
+
+  /* --- Transiciones --- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur: 0.35s;
+}

@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.14179fc7.css",
-    "main.js": "/static/js/main.06fb2f62.js",
-    "static/js/453.e1150d4e.chunk.js": "/static/js/453.e1150d4e.chunk.js",
+    "main.css": "/static/css/main.bc0a04d9.css",
+    "main.js": "/static/js/main.789e9e48.js",
+    "static/js/453.b5a3d541.chunk.js": "/static/js/453.b5a3d541.chunk.js",
     "static/media/bannerImage.jpeg": "/static/media/bannerImage.d6136de27c12a0e95144.jpeg",
     "static/media/plumas.png": "/static/media/plumas.03bc745552b33362b937.png",
     "static/media/internacionales.jpeg": "/static/media/internacionales.8efccd86ec3734e0fd95.jpeg",
@@ -22,12 +22,12 @@
     "static/media/dodoTravelWhite.png": "/static/media/dodoTravelWhite.95126bfb2fdd4b178c1e.png",
     "static/media/dodoTravelBlue.png": "/static/media/dodoTravelBlue.fd488ee4e4723caaef66.png",
     "index.html": "/index.html",
-    "main.14179fc7.css.map": "/static/css/main.14179fc7.css.map",
-    "main.06fb2f62.js.map": "/static/js/main.06fb2f62.js.map",
-    "453.e1150d4e.chunk.js.map": "/static/js/453.e1150d4e.chunk.js.map"
+    "main.bc0a04d9.css.map": "/static/css/main.bc0a04d9.css.map",
+    "main.789e9e48.js.map": "/static/js/main.789e9e48.js.map",
+    "453.b5a3d541.chunk.js.map": "/static/js/453.b5a3d541.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.14179fc7.css",
-    "static/js/main.06fb2f62.js"
+    "static/css/main.bc0a04d9.css",
+    "static/js/main.789e9e48.js"
   ]
 }

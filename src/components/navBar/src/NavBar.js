@@ -42,14 +42,15 @@ const NavBar = () => {
       <Link to="/nosotros" className="nav-link" onClick={closeMenu}>
         Nosotros
       </Link>
-      {/* Uncomment and add more links as needed */}
-      {/*
-      <Link to="/contacto" className="nav-link" onClick={closeMenu}>
-        Contacto
-      </Link>
-      <Link to="/requisitos" className="nav-link" onClick={closeMenu}>
-        Requisitos
-      </Link> */}
+      <a
+        href="https://wa.me/5493513719249"
+        className="nav-cta"
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={closeMenu}
+      >
+        Consultanos
+      </a>
     </div>
   );
 

@@ -63,9 +63,14 @@ const TripsPage = () => {
   return (
     <div className="page-content trips-container">
       <div className="trips-header">
-        <h1>Nuestros Paquetes</h1>
+        <span className="trips-eyebrow">Nuestros paquetes</span>
+        <h1>Encontrá tu próximo destino</h1>
+        <p className="trips-subtitle">
+          {filteredTrips.length} {filteredTrips.length === 1 ? 'paquete disponible' : 'paquetes disponibles'}
+          {currentCategory !== 'all' ? ` en ${currentCategory}` : ''}
+        </p>
       </div>
-      
+
       {/* Category Filter */}
       <div className="category-filter">
         <button

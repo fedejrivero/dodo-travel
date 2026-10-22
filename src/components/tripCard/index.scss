@@ -2,18 +2,18 @@
     text-decoration: none;
     color: inherit;
     display: block;
-    width: 300px;
-    margin: 1rem;
-    transition: transform 0.2s ease;
+    width: 100%;
+    height: 100%;
+    transition: transform var(--dur) var(--ease);
 
     &:hover {
-      transform: translateY(-5px);
+        transform: translateY(-6px);
     }
 
     &:focus-visible {
-      outline: 2px solid #3498db;
-      outline-offset: 2px;
-      border-radius: 8px;
+        outline: 2px solid var(--accent-500);
+        outline-offset: 3px;
+        border-radius: var(--radius-lg);
     }
 }
 
@@ -23,67 +23,92 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px #0000001a;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
     overflow: hidden;
-    transition: transform .3s ease, box-shadow .3s ease;
+    transition: box-shadow var(--dur) var(--ease), border-color var(--dur) var(--ease);
 
-    &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 8px #00000026;
+    .trip-card-link:hover & {
+        box-shadow: var(--shadow-lg);
+        border-color: var(--brand-100);
     }
 
     .trip-card-image {
+        overflow: hidden;
+
         section {
             width: 100%;
-            height: 200px;
+            height: 210px;
             background-size: cover;
             background-position: center;
             position: relative;
-            border-radius: 5px;
             overflow: hidden;
- 
-            .trip-card-category {
-                position: absolute;
-                top: 10px;
-                left: 10px;
-                font-weight: bold;
-                background-color: rgba(0, 0, 0, 0.5);
-                color: white;
-                padding: 5px 10px;
-                border-radius: 5px;
-            }
+            transition: transform 0.6s var(--ease);
+        }
+
+        .trip-card-category {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            z-index: 1;
+            font-family: var(--font-display);
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            background-color: var(--accent-500);
+            color: #ffffff;
+            padding: 5px 12px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 4px 12px rgba(232, 102, 61, 0.35);
         }
     }
 
+    .trip-card-link:hover & .trip-card-image section {
+        transform: scale(1.06);
+    }
+
     .trip-card-content {
-        padding: 1rem;
+        padding: 1.25rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between; 
+        justify-content: space-between;
 
         .trip-card-title {
             h3 {
                 margin: 0;
-                font-size: 1.2rem;
+                font-family: var(--font-display);
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--brand-800);
+                line-height: 1.25;
             }
         }
-        
-        .trip-card-dates {
-            width: 80%;
-            margin-bottom: 0.5rem;
-        }
 
+        .trip-card-dates {
+            width: 100%;
+            margin-top: 0.35rem;
+            margin-bottom: 0.5rem;
+            color: var(--ink-500);
+            font-size: 0.9rem;
+        }
 
         .trip-card-amenities {
-            margin-top: 0.5rem;
+            margin-top: 0.75rem;
+
             h4 {
                 margin: 0;
-                font-size: 0.8rem;
+                font-size: 0.72rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.06em;
+                color: var(--ink-300);
             }
+
             ul {
-                margin-top: 0.5rem;
+                margin-top: 0.6rem;
                 list-style: none;
                 padding: 0;
                 display: flex;
@@ -91,9 +116,11 @@
                 flex-wrap: wrap;
                 gap: 0.75rem;
             }
+
             li {
                 margin-bottom: 0.25rem;
                 font-size: 0.8rem;
+                color: var(--ink-700);
             }
         }
     }
@@ -104,11 +131,11 @@
     }
 
     .trip-card-footer {
-        padding: 1rem;
+        padding: 1rem 1.25rem 1.25rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        border-top: 1px solid #ccc;
+        border-top: 1px solid var(--border);
 
         .trip-card-price {
             width: 100%;
@@ -117,29 +144,40 @@
             align-items: center;
             justify-content: space-between;
             gap: 0.5rem;
-            font-weight: bold;
-            font-size: 1.2rem;
+
+            h4 {
+                margin: 0;
+                font-size: 0.72rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.06em;
+                color: var(--ink-300);
+            }
 
             .price-amount {
                 display: flex;
-                align-items: center;
+                align-items: baseline;
                 flex-wrap: nowrap;
-                font-weight: bold;
-                color: #043e53;
+                font-family: var(--font-display);
+                font-weight: 800;
+                color: var(--brand-800);
                 margin: 0;
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
 
             .currency {
                 font-size: 1rem;
+                font-weight: 600;
                 vertical-align: top;
+                margin-right: 0.15rem;
+                color: var(--ink-500);
             }
         }
     }
 
     .title {
-        margin-bottom: 1rem;
-        align-self: center;
-        font-size: 0.8rem;
+        margin: 0 1.25rem 1rem;
+        align-self: stretch;
+        justify-content: center;
     }
 }

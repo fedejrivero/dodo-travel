@@ -1,0 +1,60 @@
+.home-page {
+    align-items: stretch;
+    gap: 1rem;
+    padding-top: 2.5rem;
+}
+
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 1rem;
+}
+
+.home-eyebrow {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent-500);
+    margin-bottom: 0.6rem;
+}
+
+.home-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--brand-800);
+    margin-bottom: 0.75rem;
+}
+
+.home-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: var(--ink-500);
+    max-width: 520px;
+}
+
+.home-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-section + .home-section {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .home-page {
+        padding-top: 1.5rem;
+    }
+
+    .home-intro {
+        margin-bottom: 0.5rem;
+    }
+}

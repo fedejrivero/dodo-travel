@@ -1,16 +1,27 @@
-
 /* Navigation Bar */
 .navbar {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
-    padding: 1rem 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.82);
+    background-blend-mode: overlay;
+    -webkit-backdrop-filter: saturate(160%) blur(12px);
+    backdrop-filter: saturate(160%) blur(12px);
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid var(--border);
+    box-shadow: none;
     position: sticky;
     top: 0;
     z-index: 1000;
     min-height: 80px;
+    transition: background-color var(--dur) var(--ease), box-shadow var(--dur) var(--ease),
+        padding var(--dur) var(--ease);
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-md);
+    padding: 0.4rem 2rem;
 }
 
 .navbar-header {
@@ -23,16 +34,23 @@
 .menu-button {
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     cursor: pointer;
-    color: #043e53;
+    color: var(--brand-800);
     padding: 0.5rem;
+    line-height: 1;
+    transition: transform var(--dur) var(--ease);
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
 }
 
 .nav-links {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    align-items: center;
+    gap: 0.5rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
     padding: 0 1rem;
@@ -42,23 +60,74 @@
     max-height: 500px;
     padding: 2rem 1rem 1rem;
 }
-  
+
 .nav-link {
-    color: #043e53;
+    position: relative;
+    color: var(--brand-800);
     text-decoration: none;
-    font-size: 1.1rem;
+    font-family: var(--font-display);
+    font-size: 1rem;
     font-weight: 600;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    padding: 0.5rem 0.4rem;
+    transition: color var(--dur) var(--ease);
     display: block;
     text-align: center;
-    border: 2px solid #043e53;
 }
-  
+
+/* Subrayado animado */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0.4rem;
+    right: 0.4rem;
+    bottom: 0.15rem;
+    height: 2px;
+    background: var(--accent-500);
+    border-radius: var(--radius-pill);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--dur) var(--ease);
+}
+
 .nav-link:hover {
+    color: var(--brand-600);
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+/* CTA de acento */
+.nav-cta {
+    margin-left: 0.6rem;
+    padding: 0.6rem 1.6rem;
+    background: var(--accent-500);
     color: #ffffff;
-    background-color: #043e53;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 0.98rem;
+    line-height: 1.2;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 4px 12px rgba(232, 102, 61, 0.28);
+    transition: transform var(--dur) var(--ease), background var(--dur) var(--ease),
+        box-shadow var(--dur) var(--ease);
+    white-space: nowrap;
+}
+
+.nav-cta:hover,
+.nav-cta:focus-visible {
+    color: #ffffff;
+    background: var(--accent-400);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(232, 102, 61, 0.35);
+    text-decoration: none;
+}
+
+.nav-cta:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(232, 102, 61, 0.3);
 }
 
 .logo-container {
@@ -72,62 +141,85 @@
 .logo {
     position: absolute;
     left: 0;
-    width: 200px;
-    height: 200px;
+    width: 190px;
+    height: 190px;
     transition: all 0.3s ease;
 }
 
 .dodo-travel {
     position: absolute;
-    left: 150px;
-    width: 250px;
-    height: 250px;
+    left: 145px;
+    width: 235px;
+    height: 235px;
     margin-left: 0.5rem;
     transition: all 0.3s ease;
+}
+
+.navbar.scrolled .logo {
+    width: 160px;
+    height: 160px;
+}
+
+.navbar.scrolled .dodo-travel {
+    left: 120px;
+    width: 200px;
+    height: 200px;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
     .navbar {
-        padding: 1rem 1rem;
+        padding: 0.75rem 1rem;
     }
+
     .menu-button {
         background: none;
         border: none;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         cursor: pointer;
-        color: #043e53;
+        color: var(--brand-800);
         padding: 0.5rem;
     }
 
     .nav-links {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        align-items: stretch;
+        gap: 0.6rem;
         width: 100%;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
         padding: 0 1rem;
     }
-    
+
     .nav-links.active {
         max-height: 500px;
         padding: 1rem;
     }
-      
+
+    .nav-link {
+        padding: 0.8rem 1rem;
+        border-radius: var(--radius-md);
+        border: 1.5px solid var(--border);
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
     .nav-link:hover,
     .nav-link:focus {
         color: #ffffff;
-        background-color: #043e53;
+        background-color: var(--brand-800);
+        border-color: var(--brand-800);
     }
-    
-    .nav-link.active {
-        color: #ffffff;
-        background-color: #043e53;
-        border-bottom: 2px solid #ffffff;
+
+    .nav-cta {
+        margin-left: 0;
+        text-align: center;
+        padding: 0.85rem 1rem;
     }
-    
 
     .logo-container {
         display: flex;
@@ -139,14 +231,14 @@
     .logo {
         position: absolute;
         left: 0;
-        width: 150px;
-        height: 150px;
+        width: 140px;
+        height: 140px;
     }
 
     .dodo-travel {
         position: absolute;
-        left: 100px;
-        height: 200px;
-        width: 200px;
+        left: 95px;
+        height: 185px;
+        width: 185px;
     }
 }
